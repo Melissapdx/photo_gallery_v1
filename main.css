@@ -1,0 +1,40 @@
+/*CSS*/
+*{
+	box-sizing: border-box;
+}
+
+input{
+	width:460px;
+	display:block;
+	margin:0 auto;
+	margin-bottom: 30px;
+	padding-bottom: 10px;
+	font-size:16px;
+}
+.photos{
+	width: 980px;
+	margin: 0 auto;
+}
+.photos li{
+	list-style:none;
+	margin-bottom: 60px;
+
+}
+.photos ul{
+	overflow:hidden;
+	padding:0;
+	margin:0;
+}
+.photos img{
+	width:100%;
+}
+.column1,.column2,.column3{
+	float:left;
+	width:200px;
+	margin-right: 60px;
+	
+}
+.column4{
+	float:left;
+	width:200px;
+}

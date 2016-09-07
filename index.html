@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" href="main.css">
+<link type="text/css" rel="stylesheet" href="css/lightgallery.css" > 
+</head>
+<body>
+<header>
+<input type="text" name="search bar" id="search bar" placeholder="Search">
+</header>
+
+<div class="photos">
+	<ul id="ul-li">
+
+	<div class="column1 " >
+	<li data src="Photos/01.jpg"><img src="Photos/thumbnails/01.jpg" alt="Hay bales"/></li>
+	<li data src="Photos/02.jpg"><img src="Photos/thumbnails/02.jpg" alt="Lake"/></li>
+	<li data src="Photos/03.jpg"><img src="Photos/thumbnails/03.jpg" alt="Canyon"/></li>
+	</div>
+	<div class="column2" >
+	<li data src="Photos/04.jpg"><img src="Photos/thumbnails/04.jpg" alt="Iceberg"/></li>
+	<li data src="Photos/05.jpg"><img src="Photos/thumbnails/05.jpg" alt="Desert"/></li>
+	<li data src="Photos/06.jpg"><img src="Photos/thumbnails/06.jpg" alt="Fall"/></li>
+	</div>
+	<div class="column3" >
+	<li data src="Photos/07.jpg"><img src="Photos/thumbnails/07.jpg" alt="Plantation"/></li>
+	<li data src="Photos/08.jpg"><img src="Photos/thumbnails/08.jpg" alt="Dunes"/></li>
+	<li data src="Photos/09.jpg"><img src="Photos/thumbnails/09.jpg" alt="Countryside Lane"/></li>
+	</div>
+	<div class="column4" >
+	<li data src="Photos/10.jpg"><img src="Photos/thumbnails/10.jpg" alt="Sunset"/></li>
+	<li data src="Photos/11.jpg"><img src="Photos/thumbnails/11.jpg" alt="Cave"/></li>
+	<li data src="Photos/12.jpg"><img src="Photos/thumbnails/12.jpg" alt="Bluebells"/></li>
+	</div>
+	</ul>
+</div>
+
+<script src="jquery-3.1.0.min.js"></script>
+<script src="lightgallery.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#ul-li").lightGallery(); 
+        
+    });
+</script>
+
+
+</body>
+</html>
