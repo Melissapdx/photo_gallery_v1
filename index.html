@@ -1,48 +1,68 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<link rel="stylesheet" href="main.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial scale=1.0">
+<title>Photo Gallery</title>
+<link rel="stylesheet" href="css/main.css">
 <link type="text/css" rel="stylesheet" href="css/lightgallery.css" > 
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 </head>
 <body>
 <header>
-<input type="text" name="search bar" id="search bar" placeholder="Search">
+<div id="search">
+<input type="text" name="search bar" id="filter-search" placeholder="Search"/>
+</div>
 </header>
 
 <div class="photos">
-	<ul id="ul-li">
+	
+		<ul class="ul-li">
+			<li data-src="Photos/01.jpg">
+				<img src="Photos/thumbnails/01.jpg" data-tags="Hay,Bales" alt="I love hay bales. Took this snap on a drive through the countryside past some straw fields."/>
+			</li>
+			<li data-src="Photos/02.jpg">
+				<img src="Photos/thumbnails/02.jpg" data-tags="Lake" alt="The lake was so calm today. We had a great view of the snow on the mountains from here."/>
+			</li>
+			<li data-src="Photos/03.jpg">
+				<img src="Photos/thumbnails/03.jpg" data-tags="Canyon" alt="I hiked to the top of the mountain and got this picture of the canyon and trees below."/>
+			</li>
+			<li data-src="Photos/04.jpg">
+				<img src="Photos/thumbnails/04.jpg" data-tags="Iceberg" alt="It was amazing to see an iceberg up close, it was so cold but didn’t snow today."/>
+			</li>
+			<li data-src="Photos/05.jpg">
+				<img src="Photos/thumbnails/05.jpg" data-tags="Desert" alt="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons."/>
+			</li>
+			<li data-src="Photos/06.jpg">
+				<img src="Photos/thumbnails/06.jpg" data-tags="Fall" alt="Fall is coming, I love when the leaves on the trees start to change color."/>
+			</li>
+			<li data-src="Photos/07.jpg">
+				<img src="Photos/thumbnails/07.jpg" data-tags="Plantation" alt="I drove past this plantation yesterday, everything is so green!"/>
+			</li>
+			<li data-src="Photos/08.jpg">
+				<img src="Photos/thumbnails/08.jpg" data-tags="Dunes" alt="My summer vacation to the Oregon Coast. I love the sandy dunes!"/>
+			</li>
+			<li data-src="Photos/09.jpg">
+				<img src="Photos/thumbnails/09.jpg" data-tags="Countryside Lane" alt="We enjoyed a quiet stroll down this countryside lane. "/>
+			</li>
+			<li data-src="Photos/10.jpg">
+				<img src="Photos/thumbnails/10.jpg" data-tags="Sunset" alt="Sunset at the coast! The sky turned a lovely shade of orange."/>
+			</li>
+			<li data-src="Photos/11.jpg">
+				<img src="Photos/thumbnails/11.jpg" data-tags="Cave" alt="I did a tour of a cave today and the view of the landscape below was breathtaking."/>
+			</li>
+			<li data-src="Photos/12.jpg">
+				<img src="Photos/thumbnails/12.jpg" data-tags="Bluebells" alt="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in."/>
+			</li>
+		</ul>
+	</div>
 
-	<div class="column1 " >
-	<li data src="Photos/01.jpg"><img src="Photos/thumbnails/01.jpg" alt="Hay bales"/></li>
-	<li data src="Photos/02.jpg"><img src="Photos/thumbnails/02.jpg" alt="Lake"/></li>
-	<li data src="Photos/03.jpg"><img src="Photos/thumbnails/03.jpg" alt="Canyon"/></li>
-	</div>
-	<div class="column2" >
-	<li data src="Photos/04.jpg"><img src="Photos/thumbnails/04.jpg" alt="Iceberg"/></li>
-	<li data src="Photos/05.jpg"><img src="Photos/thumbnails/05.jpg" alt="Desert"/></li>
-	<li data src="Photos/06.jpg"><img src="Photos/thumbnails/06.jpg" alt="Fall"/></li>
-	</div>
-	<div class="column3" >
-	<li data src="Photos/07.jpg"><img src="Photos/thumbnails/07.jpg" alt="Plantation"/></li>
-	<li data src="Photos/08.jpg"><img src="Photos/thumbnails/08.jpg" alt="Dunes"/></li>
-	<li data src="Photos/09.jpg"><img src="Photos/thumbnails/09.jpg" alt="Countryside Lane"/></li>
-	</div>
-	<div class="column4" >
-	<li data src="Photos/10.jpg"><img src="Photos/thumbnails/10.jpg" alt="Sunset"/></li>
-	<li data src="Photos/11.jpg"><img src="Photos/thumbnails/11.jpg" alt="Cave"/></li>
-	<li data src="Photos/12.jpg"><img src="Photos/thumbnails/12.jpg" alt="Bluebells"/></li>
-	</div>
-	</ul>
-</div>
 
 <script src="jquery-3.1.0.min.js"></script>
-<script src="lightgallery.js"></script>
-<script type="text/javascript">
-    $(document).ready(function() {
-        $("#ul-li").lightGallery(); 
-        
-    });
-</script>
+<script src="js/search.js"></script>
+<script src="js/lightgallery.js"></script>
+<script src="js/main.js"></script>
+
 
 
 </body>

@@ -2,7 +2,9 @@
 *{
 	box-sizing: border-box;
 }
-
+body{
+	background-color: white;
+}
 input{
 	width:460px;
 	display:block;
@@ -10,12 +12,20 @@ input{
 	margin-bottom: 30px;
 	padding-bottom: 10px;
 	font-size:16px;
+	font-family: 'Lato', sans-serif;
+	border-color: lightgrey;
 }
 .photos{
 	width: 980px;
 	margin: 0 auto;
 }
+.photos li:nth-child(4n+4){
+	margin-right:0px;
+}
 .photos li{
+	float:left;
+	width:200px;
+	margin-right:60px;
 	list-style:none;
 	margin-bottom: 60px;
 
@@ -28,13 +38,4 @@ input{
 .photos img{
 	width:100%;
 }
-.column1,.column2,.column3{
-	float:left;
-	width:200px;
-	margin-right: 60px;
-	
-}
-.column4{
-	float:left;
-	width:200px;
-}
+
